@@ -3,13 +3,16 @@
 let ladder = {
   step: 0,
   up() {
-    ladder.step++;
+    this.step++;
+    return this;
   },
   down() {
-    ladder.step--;
+    this.step--;
+    return this;
   },
   showStep: function() { // shows the current step
-    console.log(ladder.step);
+    console.log(this.step);
+    return this;
   }
 };
 
